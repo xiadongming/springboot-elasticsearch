@@ -41,7 +41,6 @@ public class ElasticSearchDemo {
 
 	@Autowired
 	private RestHighLevelClient restHighLevelClient;
-
 	// 创建索引库
 	@Test
 	public void testCreatIndex() throws IOException {
@@ -64,7 +63,6 @@ public class ElasticSearchDemo {
 	}
 
 	// 删除索引库
-
 	@Test
 	public void testDeleteIndex() throws IOException {
 		DeleteIndexRequest deleteIndexRequest = new DeleteIndexRequest("index_spring");
@@ -79,8 +77,8 @@ public class ElasticSearchDemo {
 	@Test
 	public void testAddDocment() throws IOException {
 		Map<String,Object> jsonMap = new HashMap();
-       jsonMap.put("name","添加文档123");
-       jsonMap.put("description", "精通--大数据的elasticsearch精通===精通");
+       jsonMap.put("name","添加文档123精123通");
+       jsonMap.put("description", "123-elasticsearch通");
        jsonMap.put("studymodel", "401021");
        jsonMap.put("price", 5.8f);
        IndexRequest indexRequest = new IndexRequest("index_spring","doc");
